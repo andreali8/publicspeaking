@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Speaking Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="images/speaker.png" alt="Logo"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="persuasion.html">Persuasion</a></li>
+          <li><a href="confidence.html">Confidence</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Feedback</h1>
+    <p>Please Provide Any Feedback You Have For This Website and take the 5-question quiz!</p>
+  </section>
+
+  <section class="facts">
+    <h1>Feedback and Quiz Links</h1>
+  
+    <div class="row">
+  
+      <div class="reasons">
+        <h3>Questions/Feedback?</h3>
+        <a href="https://forms.gle/nSCbCkWM8EU4QYWK7" class="hero-btn red-btn" target="_blank">Give Your Feedback!</a>
+      </div>
+  
+      <div class="reasons">
+        <h3>Quiz</h3>
+        <a href="https://forms.gle/94BFcJPf57PXokzG6" class="hero-btn red-btn" target="_blank">Take the Quiz</a>
+      </div>
+  
+      <div class="reasons">
+        <h3>Sources</h3>
+        <a href="persuasion.html" class="hero-btn red-btn">Works Cited</a>
+      </div>
+  
+    </div>
+  </section>
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+  
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+   
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+   
+  </script>
+
+</body>
+</html>
