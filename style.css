@@ -10,7 +10,7 @@
     min-height: 100vh;
     width: 100%;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-    url("images/background.jpg");
+    url("https://media.discordapp.net/attachments/832003144271659018/1176298352506310766/image.png?ex=656e5c35&is=655be735&hm=24dc64cf39d9e9b8c133bdf91176c69f7ec58acca25406734782899ec152d411&=&width=971&height=549");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -197,7 +197,7 @@ h3{
 .sub-header{
     height: 70vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("images/background.jpg");
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("https://media.discordapp.net/attachments/832003144271659018/1176298352506310766/image.png?ex=656e5c35&is=655be735&hm=24dc64cf39d9e9b8c133bdf91176c69f7ec58acca25406734782899ec152d411&=&width=971&height=549");
     background-position: center;
     background-size: cover;
     text-align: center;
