@@ -3,52 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
-    <link href="style.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Public Speaking Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <ul class="tabs">
-        <li data-tab-target="#home" class="active tab">Home</li>
-        <li data-tab-target="#quick-tips" class="tab">Quick Tips</li>
-        <li data-tab-target="#persuasion" class="tab">Persuasion</li>
-        <li data-tab-target="#clubs" class="tab">Clubs</li>
-        <li data-tab-target="#sources" class="tab">Sources</li>
-    </ul>
-    
-    <div class="home">
-        <div id="home" data-tab-content class="active">
-            <h1>Home</h1>
-            <p>Homepage</p>
-        </div>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/speaker.png" alt="Logo"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="persuasion.html">Persuasion</a></li>
+          <li><a href="confidence.html">Confidence</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+  <div class="text-box">
+    <h1>Public Speaking</h1>
+    <p>Welcome to my public speaking website! The goal of this website is to help people become more 
+      confident in their public speaking skills.<br> Studies show that 30% of Americans have a fear 
+      of public speaking. Hopefully this website helps!</p>
+      <a href="tips.html" class="hero-btn">Click to learn more</a>
+  </div>
+  </section>
+
+ <!--TIPS-->
+
+<section class="facts">
+  <h1>30% percent of Americans are scared of public speaking.</h1>
+  <p>Why is this?</p>
+
+  <div class="row">
+
+    <div class="reasons">
+      <h3>Because it's scary.</h3>
+      <a href="confidence.html" class="hero-btn red-btn">Confidence Tips</a>
     </div>
 
-    <div class="quick-tips">
-        <div id="quick-tips" data-tab-content>
-            <h1>Tab One</h1>
-            <p>Tab #1</p>
-        </div>
-    </div>
-    
-    <div class="persuasion">
-        <div id="persuasion" data-tab-content>
-            <h1>Tab Two</h1>
-            <p>Tab #2</p>
-        </div>
+    <div class="reasons">
+      <h3>Because I'm bad at it.</h3>
+      <a href="tips.html" class="hero-btn red-btn">General Tips</a>
     </div>
 
-    <div class="clubs">
-        <div id="clubs" data-tab-content>
-            <h1>Tab Three</h1>
-            <p>Tab #3</p>
-        </div>
+    <div class="reasons">
+      <h3>Because I'm not persuasive.</h3>
+      <a href="persuasion.html" class="hero-btn red-btn">Persuasion Tips</a>
     </div>
 
-    <div class="sources">
-        <div id="sources" data-tab-content>
-            <h1>Sources</h1>
-            <p>Sources</p>
-        </div>
-    </div>
+  </div>
+</section>
+
+ <script>
+   var navLinks = document.getElementById("navLinks");
+
+   function showMenu(){
+     navLinks.style.right = "0";
+   }
+  
+   function hideMenu(){
+     navLinks.style.right = "-200px";
+   }
+  
+ </script>
+
 </body>
 </html>
