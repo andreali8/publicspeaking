@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Speaking Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="images/speaker.png" alt="Logo"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="persuasion.html">Persuasion</a></li>
+          <li><a href="confidence.html">Confidence</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>How Do I Become Confident when Public Speaking?</h1>
+    <p>Here are tips to look and sound confident while public speaking!</p>
+  </section>
+
+  <section class="facts">
+    <h1>I don't feel confident giving speeches at all. How do I suddenly become confident?</h1>
+    <p id="confidence"> No one can go from shy one day to confident the next. There is a step in between: <br> to sound and look
+        confident and to not sound and look shy. Here are some ways to achieve that!
+    </p>
+  </section>
+
+  <section class="confident-tips" id="quick-tips">
+    <div class="row">
+      
+      <div class="confident-tips">
+        <h1 style="text-align: center;">Steps to Gaining Confidence</h1> <br><br>
+        <h2>Step 1: Not Looking Scared</h2>
+        <p>Improve your posture, use more open-body language, and give better eye contact. </p> <br>
+        <h2>Step 2: Not Sounding Scared</h2>
+        <p>Speak louder, end your sentences on a lower pitch, and use pauses when you speak. In addition, 
+            be wary of your speaking rate. Don't talk too fast or slow, it will make you sound panicked
+            or unsure. </p> <br>
+        <h2>Step 3: Adopt a Curious Mindset</h2>
+        <p>Instead of focusing on yourself, focus on the audience you are talking about. The moment you
+            shift your attention away from yourself and to the audience, you'll stop being self-conscious and 
+            eliminate the awkward feeling.  </p> <br>
+        <h2>Step 4: Wear Clothes You're Comfortable In </h2>
+        <p>A lot of the times, we judge ourselves based on what we wear. Therefore, wear clothes that make
+            you feel confident while speaking. This is called enclothed cognition. The research behind 
+            enclothed cognition suggests that its not so much about what we wear, but what we think about what we wear.</p><br>
+        <h2>Step 5: Master Your Breathing</h2>
+        <p>Oftentimes, normal (chest) breathing doesn't supply enough oxygen for a long speech, which can lead to 
+            shortness of breath. This can make you found nervous or jittery. To fix this, make sure to take deep 
+            breaths at a controlled pace when you take a pause in your speech. Additionally, make sure to take a 
+            strong breath <b>before</b> you start speaking. </p><br>
+        <h2>Step 6: Say Your Speech Out Loud</h2>
+        <p>Saying your speech out loud will help you be more familiar with the flow of the words, which is important 
+            in order to reduce stuttering. Stuttering makes you sound nervous, and to avoid that you must familiarize yourself
+            with the pronounciation of the words. This will also help you ingrain your speech in your head more so you don't have
+            to look down at your notecards 24/7. </p><br>
+        <h2>Step 7: Sound Happy</h2>
+        <p>Whatever emotion you sound actually induces the same emotion in the audience. Studies have shown that 
+            there is a direct correlation between how our voices sound and how we feel. Thus, sounding happier 
+            will make the audience happier to listen to you as well. </p>
+        <p>Additionally, to reduce nervousness, pretend you're having a conversation with a specific audience 
+            member. Speak as if you're having a converation with a friend, which will make you more relaxed and 
+            allow the audience to warm up to you. It will also give the audience an impression of closeness and friendship, which 
+            will make them want to listen to you more. </p> <br>
+        <h2>Step 8: Channel Your Fear</h2>
+        <p>Use your nervous energy and channel it into passion. When you're speaking and you feel your heart racing or your 
+            palms sweating, reframe the 'nervousness' emotion as excitement. Then, you'll sound more passionate and into 
+            what you're speaking about. 
+        </p><br>
+
+        <br><a href="https://www.scienceofpeople.com/stage-fright/" 
+        class="hero-btn red-btn" target="_blank">More Tips on Overcoming Stage Fright</a>
+      </div>
+
+    </div>
+</section>
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+ 
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+   
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+   
+  </script>
+
+</body>
+</html>
