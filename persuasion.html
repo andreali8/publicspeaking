@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Speaking Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="images/speaker.png" alt="Logo"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="persuasion.html">Persuasion</a></li>
+          <li><a href="confidence.html">Confidence</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Persuasion Tips</h1>
+    <p>Here are some persuasion tips to quickly enhance your persuasive speaking ability.</p>
+  </section>
+
+<section class="ethos-pathos-logos" id="quick-tips">
+    <div class="row">
+      
+      <div class="ethos-pathos-logos">
+        <h1>Ethos, Pathos, Logos</h1>
+        <p>To be a successful speaker, one needs to utilize Ethos, Pathos, and Logos, which are </p>
+        <p><b><i>Ethos</i></b> refers to the appeal to credibility. The speaker can communicate
+        their authority over the subject by using credible sources, having proper credentials, and choosing
+        the appropriate language (using no slang and correct pronounciation of words). </p>
+        <p><b><i>Pathos</i></b> refers to the appeal to emotion. It means to persuade an audience
+        by purposefully evoking the audience's emotions. Speakers can do this by 
+        telling impactful stories, making deliberate word choices, and using the correct
+        tones that evoke emotion. </p> 
+        <p><b><i>Logos</i></b> refers to the appeal to logic. To use logos, the speaker
+        needs to make clear, logical connections between ideas, using things like facts or statistics. 
+        There should be no fallacies, or assumptions, in the logical reasoning the speaking is making.</p>
+
+        <br><a href="https://owl.purdue.edu/owl/general_writing/academic_writing/logic_in_argumentative_writing/fallacies.html" 
+        class="hero-btn red-btn" target="_blank">Common Fallacies</a>
+      </div>
+
+      <div class="ethos-pathos-logos">
+        <img src="images/ethospathoslogos.png">
+      </div>
+    </div>
+</section>
+
+<section class="audience" id="quick-tips">
+  
+  <div class="row">
+
+    <div class="examples">
+      <h1>Examples of Ethos, Logos, and Pathos</h1>
+      <br>
+      <p>Imagine this: a small dog sits in a dark, cold garage. His hair is matted and dirty; 
+        he is skinny and weak from going days without food. There is no water for him to drink,
+         no person to give him love and no blanket to keep him warm at night. While this might be
+          a hard scenario to imagine, it is not an uncommon one in America today. According to 
+          the Humane Society of the United States, nearly 1,000,000 animals are abused or die 
+          from abuse every year. As a veterinarian with 30 years of experience, I have seen how 
+          even one incident of abuse can affect an animal for the rest of its life. As a society, 
+          we need to be more aware of this terrible problem and address this issue before it gets worse.</p>
+
+      <h2 class="answers">ANSWERS</h2>
+      <ul id="accordion">
+
+        <li>
+          <label for="Ethos">ETHOS<span>&#x3e;</span></label>
+          <input type="radio" name="accordion" id="Ethos">
+          <div class="content">
+            <p><i>As a veterinarian with 30 years of experience, I have seen how 
+              even one incident of abuse can affect an animal for the rest of its life.</i></p> 
+            <p>This is ethos because it is appealing to the author's credibility, which is established when the author states
+              their own experiences and occupation. The author has a lot of experience dealing with mistreated animals, and thus 
+              is reliable.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <label for="Logos">LOGOS<span>&#x3e;</span></label>
+          <input type="radio" name="accordion" id="Logos">
+          <div class="content">
+            <p><i>According to the Humane Society of the United States, nearly 1,000,000 animals are abused or die from abuse every year.</i></p>
+            <p>This is logos because the author is using a reliable resource as a statistic to appeal to our intellect.</p>
+          </div>
+        </li>
+
+        <li>
+          <label for="Pathos">PATHOS<span>&#x3e;</span></label>
+          <input type="radio" name="accordion" id="Pathos">
+          <div class="content">
+            <p><i>There is no water for him to drink, no person to give him love and no blanket to keep him warm at night.</i></p>
+            <p>This is pathos because the author is using the sad story of the dog to evoke an emotional reaction from 
+              the reader. The author is trying to make the reader feel sadness and pity for the mistreated animal.  </p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+  var navLinks = document.getElementById("navLinks");
+
+  function showMenu(){
+    navLinks.style.right = "0";
+  }
+ 
+  function hideMenu(){
+    navLinks.style.right = "-200px";
+  }
+ 
+</script>
+
+</body>
+</html>
